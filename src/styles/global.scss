@@ -1,0 +1,44 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;  
+}
+
+#root, html, body, #App {
+  min-height: 100vh;
+  background-color: #07061a;
+  display: flex;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+
+body, input, button {
+  font-family: 'Lato', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+#App {
+  position: relative;
+  align-items: center;
+  justify-content: center;
+}
+
+#App::after {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-image: linear-gradient(#F2B880, #C98686);
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#App::before {
+  content: '';
+  position: absolute;
+  width: 350px;
+  height: 350px;
+  background-image: linear-gradient(#966B9D, #FFF4EC);
+  border-radius: 50%;
+  transform: translate(50%, 50%);
+}

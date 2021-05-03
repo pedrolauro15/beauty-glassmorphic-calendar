@@ -1,0 +1,47 @@
+#Calendar__table {
+  width: 100%;
+  margin-top: 1.2rem;
+
+  > thead {
+    > tr {
+      > th {
+        background-color: #FFF;
+        border-spacing: 4px;
+        color: #111;
+        font-weight: 400;
+        font-size: 1rem;
+        cursor: pointer;
+        width: 2rem;
+        height: 2rem;
+        border-radius: 0.25rem;
+        transition: transform 0.2s ease;
+
+        &:hover {
+          transform: rotate3d(0, 1, 0, 30deg);
+        }
+      }
+    }
+  }
+
+  >tbody {
+    > tr {
+      > td {
+        text-align: center;
+        height: 2.4rem;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background 0.2s;
+
+        &:hover {
+          background-color: #fff;
+          color: #111;
+        }
+
+        &.selected {
+          background-color: #FFF;
+          color: #111;
+        }
+      }
+    }
+  }
+}
